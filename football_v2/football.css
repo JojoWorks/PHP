@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(230,42%,10%);
+    color: hsl(0,0%,90%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+}
+table, th, td, tr {
+    border: 4px solid hsl(230,42%,12%);
+    background-color: hsla(0,0%,60%,5%);
+    text-align: center;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+
+#hiddeninit {
+  display: none;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  align-content:center;
+  row-gap: 1em;
+  width: 90%;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+
+
+
+#equipe_pays, #joueurs_equipe, #info_joueurs {
+  width: 70%;
+  min-height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  column-gap: 1em;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+/*DIV GROUPING*/
+#equipe_pays div, #joueurs_equipe div, #info_joueurs div{
+  container-type: inline-size;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.1cqi;
+  text-align: center;
+  text-shadow: 0 0 5px black;
+  border: 5px groove hsla(0,0%,30%,50%);
+  border-radius: 5px;
+  padding: 1em 1.5em;
+  font-size: 0.7cqi;
+  box-sizing: border-box;
+  position: relative;
+  line-height: 1.5em;
+  box-shadow: -5px 10px 10px 2px hsla(0,0%,20%,40%);
+}
+
+p {
+  font-size: 6.5cqi;
+} li:nth-child(odd), li:nth-child(even) {
+  border: 0.5px solid hsla(0,0%,5%,15%);
+  border-radius: 10px;
+} li:nth-child(odd) {
+  background-color: hsla(0,0%,30%,25%);
+
+} li:nth-child(even) {
+  background-color: hsla(0,0%,10%,25%);
+}
+
+
+#equipe_pays div {
+  line-height: 2em;
+  background-color: hsl(0,80%,35%);
+} #joueurs_equipe div {
+  background-color: hsl(183, 95%, 35%);
+} #info_joueurs div {
+  background-color: hsl(115,80%,35%);
+}
+
+ #joueurs_equipe div ul, #info_joueurs div ul {
+  margin-top: 2em;
+ }
+
+#equipe_pays div ul{
+position: absolute;
+bottom: 1em;
+left: 10%;
+right: 10%;
+}
+
+
+/*INDIVIDUAL DIVS*/
+
+
+
+#France, #Espagne, #Allemagne, #Angleterre {
+  left: 0px;
+  bottom: 0px;
+  transition-duration: 0.3s;
+} #France:hover , #Espagne:hover, #Allemagne:hover, #Angleterre:hover {
+  position: relative;
+  bottom: 10px;
+  left: 5px;
+}
+
+#ParisSaint-Germain, #RealMadridClubdeFùtbol, #ManchesterUnitedFootballClub, #FCBayernMunich {
+  left: 0px;
+  bottom: 0px;
+  transition-duration: 0.3s;
+} #ParisSaint-Germain:hover , #RealMadridClubdeFùtbol:hover, #ManchesterUnitedFootballClub:hover, #FCBayernMunich:hover {
+  position: relative;
+  bottom: 10px;
+  left: 5px;
+}
+
+
+#KylianMbappéLottin, #ÉricSylvainAbidal, #SergeDavidGnabry, #MarcoAsensioWillemsen {
+  left: 0px;
+  bottom: 0px;
+  transition-duration: 0.3s;
+} #KylianMbappéLottin:hover, #ÉricSylvainAbidal:hover, #SergeDavidGnabry:hover, #MarcoAsensioWillemsen:hover {
+  position: relative;
+  bottom: 10px;
+  left: 5px;
+}
